@@ -8,6 +8,7 @@
 编译后将生成的包直接导入项目中即可使用。我是直接使用了其编译后生成的包，编译过程参考博客 
 http://blog.csdn.net/duanbokan/article/details/50738711
 导入的包如下：
+
 ![](https://github.com/lhzhong/AndroidOCR/blob/master/img/02.png)
 
 ### 2.数据包的导入
@@ -15,6 +16,7 @@ http://blog.csdn.net/duanbokan/article/details/50738711
 https://github.com/tesseract-ocr/tessdata 
 下载后需要把数据存储到手机中，存储的路径为sdcard/tesseract/tessdata。
 根据实现类的要求，程序会检测目录中是否有tessdata文件夹，不然就不能正常使用。以下截自类TessBaseAPI类下的init方法，该方法是用来进行文本训练的。
+
 ![](https://github.com/lhzhong/AndroidOCR/blob/master/img/03.png)
 
 ## 三、系统的实现
